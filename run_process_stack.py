@@ -104,3 +104,52 @@ def run_process_stack(db, database):
 	format_script(source, tablename, db, database)
 	tablename = 'sc_cat_item'
 	format_script(source, tablename, db, database)
+
+
+def run_heat_process_stack(db, database):
+
+	source = 'heat'
+
+	tablename = 'changes'
+	format_script(source, tablename, db, database)
+	tablename = 'employee_data'
+	format_script(source, tablename, db, database)
+	tablename = 'escalations'
+	format_script(source, tablename, db, database)
+	tablename = 'incidents'
+	format_script(source, tablename, db, database)
+	tablename = 'organisations'
+	format_script(source, tablename, db, database)
+	tablename = 'problems'
+	format_script(source, tablename, db, database)
+	tablename = 'service_requests'
+	format_script(source, tablename, db, database)
+	tablename = 'tasks'
+	format_script(source, tablename, db, database)
+
+	source = 'contacts'
+
+	tablename = 'answer'
+	format_script(source, tablename, db, database)
+	tablename = 'completedsurvey'
+	format_script(source, tablename, db, database)
+	tablename = 'completedsurveyresponse'
+	format_script(source, tablename, db, database)
+	tablename = 'fsa_sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'he_sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'lflive'
+	format_script(source, tablename, db, database)
+	tablename = 'mhclg_sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'nps'
+	format_script(source, tablename, db, database)
+	tablename = 'session'
+	format_script(source, tablename, db, database)
+	tablename = 'sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'sessionpostback'
+	format_script(source, tablename, db, database)
+	tablename = 'telephony'
+	format_script(source, tablename, db, database)

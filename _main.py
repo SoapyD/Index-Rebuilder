@@ -18,8 +18,12 @@ start_time = datetime.datetime.now() #need for process time u_printing
 
 db = 1
 database = ''
- 
-run_process_stack(db, database)
+
+#run the servicenow index updates 
+#run_process_stack(db, database)
+
+run the heat index updates
+run_heat_process_stack(db, database)
 
 
 finish_time = datetime.datetime.now()
