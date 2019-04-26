@@ -33,4 +33,4 @@ u_print('End: '+str(finish_time))
 u_print('Time Taken: '+str(finish_time - start_time))
 u_print('########################################')
 
-#save_process(start_time, finish_time, str(finish_time - start_time), "Index-Rebuilder", 'daily')
+save_process(start_time, finish_time, str(finish_time - start_time), "Index-Rebuilder", 'daily')
