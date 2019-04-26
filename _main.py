@@ -20,9 +20,9 @@ db = 1
 database = ''
 
 #run the servicenow index updates 
-#run_process_stack(db, database)
+run_process_stack(db, database)
 
-run the heat index updates
+#run the heat index updates
 run_heat_process_stack(db, database)
 
 
