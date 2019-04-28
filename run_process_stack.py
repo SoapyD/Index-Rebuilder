@@ -106,6 +106,14 @@ def run_process_stack(db, database):
 	format_script(source, tablename, db, database)
 
 
+	source = 'lfliveextract'
+	
+	tablename = 'session_reduction'
+	format_script(source, tablename, db, database)
+	tablename = 'nps_reduction'
+	format_script(source, tablename, db, database)
+
+
 def run_heat_process_stack(db, database):
 
 	source = 'heat'
