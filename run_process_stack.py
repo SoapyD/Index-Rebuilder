@@ -147,17 +147,22 @@ def run_heat_process_stack(db, database):
 	format_script(source, tablename, db, database)
 	tablename = 'he_sessionincident'
 	format_script(source, tablename, db, database)
-	tablename = 'lflive'
-	format_script(source, tablename, db, database)
 	tablename = 'mhclg_sessionincident'
 	format_script(source, tablename, db, database)
-	tablename = 'nps'
+	tablename = 'croydon_sessionincident'
+	format_script(source, tablename, db, database)	
+	tablename = 'sessionincident'
 	format_script(source, tablename, db, database)
 	tablename = 'session'
 	format_script(source, tablename, db, database)
-	tablename = 'sessionincident'
-	format_script(source, tablename, db, database)
 	tablename = 'sessionpostback'
 	format_script(source, tablename, db, database)
+
 	tablename = 'telephony'
+	format_script(source, tablename, db, database)
+
+
+	tablename = 'lflive'
+	format_script(source, tablename, db, database)
+	tablename = 'nps'
 	format_script(source, tablename, db, database)
