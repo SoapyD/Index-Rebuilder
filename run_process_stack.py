@@ -54,6 +54,10 @@ def run_process_stack(db, database):
 	format_script(source, tablename, db, database)
 	tablename = 'sc_task'
 	format_script(source, tablename, db, database)
+	tablename = 'change_request'
+	format_script(source, tablename, db, database)	
+	tablename = 'change_task'
+	format_script(source, tablename, db, database)	
 	tablename = 'problem'
 	format_script(source, tablename, db, database)
 	tablename = 'problem_task'
@@ -75,6 +79,10 @@ def run_process_stack(db, database):
 	format_script(source, tablename, db, database)
 	tablename = 'sc_task'
 	format_script(source, tablename, db, database)
+	tablename = 'change_request'
+	format_script(source, tablename, db, database)	
+	tablename = 'change_task'
+	format_script(source, tablename, db, database)	
 	tablename = 'problem'
 	format_script(source, tablename, db, database)
 	tablename = 'problem_task'
@@ -96,6 +104,10 @@ def run_process_stack(db, database):
 	format_script(source, tablename, db, database)
 	tablename = 'sc_task'
 	format_script(source, tablename, db, database)
+	tablename = 'change_request'
+	format_script(source, tablename, db, database)	
+	tablename = 'change_task'
+	format_script(source, tablename, db, database)	
 	tablename = 'problem'
 	format_script(source, tablename, db, database)
 	tablename = 'problem_task'
@@ -116,6 +128,7 @@ def run_process_stack(db, database):
 
 def run_heat_process_stack(db, database):
 
+	#OLD TABLES
 	source = 'heat'
 
 	tablename = 'changes'
@@ -162,7 +175,61 @@ def run_heat_process_stack(db, database):
 	format_script(source, tablename, db, database)
 
 
-	tablename = 'lflive'
+	#tablename = 'lflive'
+	#format_script(source, tablename, db, database)
+	#tablename = 'nps'
+	#format_script(source, tablename, db, database)
+
+
+	#OLD TABLES
+	source = 'heatsm'
+
+	tablename = 'incident'
 	format_script(source, tablename, db, database)
-	tablename = 'nps'
+	tablename = 'servicereq'
 	format_script(source, tablename, db, database)
+	tablename = 'change'
+	format_script(source, tablename, db, database)
+	tablename = 'pir'
+	format_script(source, tablename, db, database)
+	tablename = 'problem'
+	format_script(source, tablename, db, database)
+	tablename = 'task'
+	format_script(source, tablename, db, database)
+	tablename = 'employee'
+	format_script(source, tablename, db, database)
+	tablename = 'organizational_unit'
+	format_script(source, tablename, db, database)
+
+
+	source = 'lfliveextract'
+
+	tablename = 'answer'
+	format_script(source, tablename, db, database)
+	tablename = 'completedsurvey'
+	format_script(source, tablename, db, database)
+	tablename = 'completedsurveyresponse'
+	format_script(source, tablename, db, database)
+	tablename = 'fsa_sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'he_sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'mhclg_sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'croydon_sessionincident'
+	format_script(source, tablename, db, database)	
+	tablename = 'sessionincident'
+	format_script(source, tablename, db, database)
+	tablename = 'session'
+	format_script(source, tablename, db, database)
+	tablename = 'sessionpostback'
+	format_script(source, tablename, db, database)
+
+
+	source = 'telephonyextract'
+
+	tablename = 'call'
+	format_script(source, tablename, db, database)
+
+
+
