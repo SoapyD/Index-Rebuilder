@@ -11,6 +11,19 @@ def format_script(source, tablename, db, database):
 	finish_time = datetime.datetime.now() #need for process time u_printing
 	u_print('Time Taken: '+str(finish_time - start_time))
 
+def run_process_TEST(db, database):
+
+	#NEW TABLES
+	source = 'heatsm'
+	tablename = 'organizationalunit'
+	format_script(source, tablename, db, database)
+
+
+	source = 'lfliveextract'
+	tablename = 'answer'
+	format_script(source, tablename, db, database)
+
+
 def run_process_stack(db, database):
 
 	source = 'he'
@@ -131,8 +144,8 @@ def run_heat_process_stack(db, database):
 	#OLD TABLES
 	source = 'heat'
 
-	tablename = 'changes'
-	format_script(source, tablename, db, database)
+	#RETIRED!!! ----tablename = 'changes'
+	#RETIRED!!! ----format_script(source, tablename, db, database)
 	tablename = 'employee_data'
 	format_script(source, tablename, db, database)
 	tablename = 'escalations'
@@ -150,8 +163,8 @@ def run_heat_process_stack(db, database):
 
 	source = 'contacts'
 
-	tablename = 'answer'
-	format_script(source, tablename, db, database)
+	#REFRESH NOT NEEDED!!! tablename = 'answer'
+	#REFRESH NOT NEEDED!!! format_script(source, tablename, db, database)
 	tablename = 'completedsurvey'
 	format_script(source, tablename, db, database)
 	tablename = 'completedsurveyresponse'
@@ -175,13 +188,13 @@ def run_heat_process_stack(db, database):
 	format_script(source, tablename, db, database)
 
 
-	#tablename = 'lflive'
-	#format_script(source, tablename, db, database)
-	#tablename = 'nps'
-	#format_script(source, tablename, db, database)
+	#RETIRED!!! ----tablename = 'lflive'
+	#RETIRED!!! ----format_script(source, tablename, db, database)
+	#RETIRED!!! ----tablename = 'nps'
+	#RETIRED!!! ----format_script(source, tablename, db, database)
 
 
-	#OLD TABLES
+	#NEW TABLES
 	source = 'heatsm'
 
 	tablename = 'incident'
@@ -198,14 +211,14 @@ def run_heat_process_stack(db, database):
 	format_script(source, tablename, db, database)
 	tablename = 'employee'
 	format_script(source, tablename, db, database)
-	tablename = 'organizational_unit'
+	tablename = 'organizationalunit'
 	format_script(source, tablename, db, database)
 
 
 	source = 'lfliveextract'
 
-	tablename = 'answer'
-	format_script(source, tablename, db, database)
+	#REFRESH NOT NEEDED!!! tablename = 'answer'
+	#REFRESH NOT NEEDED!!! format_script(source, tablename, db, database)
 	tablename = 'completedsurvey'
 	format_script(source, tablename, db, database)
 	tablename = 'completedsurveyresponse'
