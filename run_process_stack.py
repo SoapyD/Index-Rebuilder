@@ -6,7 +6,7 @@ def format_script(source, tablename, db, database):
 	sql = "ALTER INDEX ALL ON "+source+'_'+tablename+" REBUILD;"
 
 	u_print("UPDATING INDEXES ON... "+tablename)
-	query_database2(filename, sql, db, database)
+	query_db_powershell(sql, db, database)
 
 	finish_time = datetime.datetime.now() #need for process time u_printing
 	u_print('Time Taken: '+str(finish_time - start_time))
