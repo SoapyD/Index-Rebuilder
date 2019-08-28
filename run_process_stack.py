@@ -149,8 +149,8 @@ def run_heat_process_stack(db, database):
 	#RETIRED!!! ----format_script(source, tablename, db, database)
 	tablename = 'employee_data'
 	format_script(source, tablename, db, database)
-	tablename = 'escalations'
-	format_script(source, tablename, db, database)
+	#tablename = 'escalations'
+	#format_script(source, tablename, db, database) --DOESN'T EXIST ANYMORE
 	tablename = 'incidents'
 	format_script(source, tablename, db, database)
 	tablename = 'organisations'
