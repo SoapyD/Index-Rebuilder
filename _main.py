@@ -13,6 +13,7 @@ u_print('########################################')
 u_print('RUNNING INDEX REBUILDER PROCESS')
 u_print('########################################')
 
+
 start_time = datetime.datetime.now() #need for process time u_printing
 
 
