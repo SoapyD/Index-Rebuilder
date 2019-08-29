@@ -155,8 +155,8 @@ def run_heat_process_stack(db, database):
 	format_script(source, tablename, db, database)
 	tablename = 'organisations'
 	format_script(source, tablename, db, database)
-	tablename = 'problems'
-	format_script(source, tablename, db, database)
+	#tablename = 'problems' --RETIRED
+	#format_script(source, tablename, db, database) --RETIRED
 	tablename = 'service_requests'
 	format_script(source, tablename, db, database)
 	tablename = 'tasks'
