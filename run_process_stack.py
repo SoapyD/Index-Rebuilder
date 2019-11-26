@@ -143,20 +143,17 @@ def run_process_stack(db, database):
 def run_heat_process_stack(db, database):
 
 	#OLD TABLES
+	"""
 	source = 'heat'
 
-	#RETIRED!!! ----tablename = 'changes'
-	#RETIRED!!! ----format_script(source, tablename, db, database)
 	tablename = 'employee_data'
 	format_script(source, tablename, db, database)
-	#tablename = 'escalations'
-	#format_script(source, tablename, db, database) --DOESN'T EXIST ANYMORE
+
 	tablename = 'incidents'
 	format_script(source, tablename, db, database)
 	tablename = 'organisations'
 	format_script(source, tablename, db, database)
-	#tablename = 'problems' --RETIRED
-	#format_script(source, tablename, db, database) --RETIRED
+
 	tablename = 'service_requests'
 	format_script(source, tablename, db, database)
 	tablename = 'tasks'
@@ -164,8 +161,6 @@ def run_heat_process_stack(db, database):
 
 	source = 'contacts'
 
-	#REFRESH NOT NEEDED!!! tablename = 'answer'
-	#REFRESH NOT NEEDED!!! format_script(source, tablename, db, database)
 	tablename = 'completedsurvey'
 	format_script(source, tablename, db, database)
 	tablename = 'completedsurveyresponse'
@@ -187,8 +182,16 @@ def run_heat_process_stack(db, database):
 
 	tablename = 'telephony'
 	format_script(source, tablename, db, database)
+	"""
 
-
+	#tablename = 'escalations'
+	#format_script(source, tablename, db, database) --DOESN'T EXIST ANYMORE
+	#tablename = 'problems' --RETIRED
+	#format_script(source, tablename, db, database) --RETIRED
+	#REFRESH NOT NEEDED!!! tablename = 'answer'
+	#REFRESH NOT NEEDED!!! format_script(source, tablename, db, database)
+	#RETIRED!!! ----tablename = 'changes'
+	#RETIRED!!! ----format_script(source, tablename, db, database)
 	#RETIRED!!! ----tablename = 'lflive'
 	#RETIRED!!! ----format_script(source, tablename, db, database)
 	#RETIRED!!! ----tablename = 'nps'
@@ -245,5 +248,26 @@ def run_heat_process_stack(db, database):
 	tablename = 'call'
 	format_script(source, tablename, db, database)
 
+	source = 'ringcentral'
+
+	tablename = 'agents'
+	format_script(source, tablename, db, database)
+	tablename = 'completedcontacts'
+	format_script(source, tablename, db, database)
 
 
+
+	source = 'enwl'
+
+	tablename = 'employee'
+	format_script(source, tablename, db, database)
+	tablename = 'frs_data_escalation_watch'
+	format_script(source, tablename, db, database)
+	tablename = 'incident'
+	format_script(source, tablename, db, database)
+	tablename = 'problem'
+	format_script(source, tablename, db, database)
+	tablename = 'servicereq'
+	format_script(source, tablename, db, database)
+	tablename = 'task'
+	format_script(source, tablename, db, database)
